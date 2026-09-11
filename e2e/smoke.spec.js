@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test('user can add a product to the cart', async ({ page }) => {
-    await page.goto('/pair/3')
+    await page.goto('pair/3')
 
     await expect(page.locator('h1')).toBeVisible()
 
